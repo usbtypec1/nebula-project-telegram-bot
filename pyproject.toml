@@ -1,7 +1,7 @@
 [project]
-name = "telegram-bot-template"
+name = "nebula-project-telegram-bot"
 version = "1.0.0"
-description = "Telegram bot"
+description = "Nebula Project Telegram Bot"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

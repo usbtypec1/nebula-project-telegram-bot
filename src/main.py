@@ -6,6 +6,7 @@ from dishka import make_async_container
 
 from bootstrap.bot_factory import create_bot
 from bootstrap.config.settings import Settings
+from presentation.telegram.handlers.registry import get_root_router
 
 
 async def main():
@@ -13,6 +14,7 @@ async def main():
 
     bot = create_bot(settings.telegram_bot.token)
     dispatcher = Dispatcher()
+    dispatcher.include_router(get_root_router())
 
     container = make_async_container(context={Settings: settings})
 
